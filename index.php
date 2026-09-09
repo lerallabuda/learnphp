@@ -1,56 +1,32 @@
 <?php
- 
-function hello() {
-    var_dump('Hello');
-}
- 
-$singleHello = function () {
-    var_dump('Hello');
-};
-hello();
-hello();
- 
-function helloName($name='Nameless') {
-    var_dump("Hello, $name!");
-}
- 
-helloName('Alissia');
-helloName('Valeria');
- 
-function helloNameAndAge($name, $age) {
-    var_dump("Hello, $name! Youa are $age years old");
-}
- 
-helloNameAndAge('Alissia', 18);
-helloNameAndAge('Anna', 20);
- 
-helloName();
 
-$test = function () {
+class Box {
+    public $length;
+    public $width;
+    public $height;
+    public $isOpen;
+    public $hasBeenOpened = false;
 
-}
-var_dump($test);
-
-
-$numbers = [1, 2, 3, 4, 5];
-
-$squares = array_map(function ($number) {
-    return $number * 2;
-}, $numbers);
-$squares = array_map(fn($number) => $number * $number, $numbers);
-var_dump($squares);
-
-function cube($a) {
-    if ($a < 0) {
-        return -$a * $a * $a;
+    public function open () {
+        $this->isOpen = true;
+        $this->hasBeenOpened = true;
     }
-    return $a * $a * $a;
-    var_dump('This will never be executed');
+
+    public function close () {
+        $this->isOpen = false;
+    }
+
+    public function volume() {
+        return $this->length * $this->width * $this->height;
+    }
+
 }
 
-var_dump(cube(4));
-
-$answer = cube(5);
-$text = "cube of 5 is $answer";
-echo $text;
-
+$box1 = new Box();
+$box1->width = 10;
+$box1->height = 20;
+$box1->length = 30;
+$box1->open();
+var_dump($box2);
+var_dump($box2->volume());
+var_dump($box1);
