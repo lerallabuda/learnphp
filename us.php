@@ -1,5 +1,5 @@
 <?php
-
+$TITLE = 'U.S.';
 $posts = 
     [
         'title' => 'Same world title 1', 'content' => 'same world content 1', 'date' => 'January 1, 2021', 'author' => 'Pets',
@@ -28,18 +28,12 @@ $posts =
     ],
 
     ?>
-        
-
-
 
 
 <?php include __DIR__ . '/partials/header.php'; ?>
    
    
     <main class="container">
-      <?php include __DIR__ . '/partials/hero.php'; ?>
-      <?php include __DIR__ . '/partials/featured.php'; ?>
-     
       <div class="row g-5">
         <div class="col-md-8">
           <?php include __DIR__ . '/partials/posts.php'; ?>
