@@ -99,5 +99,5 @@
   </head>
   <body>
 
-<?php include __DIR__ . '/themeselector.php'; ?>
+<?php include __DIR__ . '/themeselect.php'; ?>
 <?php include __DIR__ . '/nav.php'; ?>

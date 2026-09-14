@@ -1,32 +1,32 @@
 <?php
-$TITLE = 'U.S.';
-$posts = 
+$title = 'U.S.';
+$posts = [
     [
-        'title' => 'Same world title 1', 'content' => 'same world content 1', 'date' => 'January 1, 2021', 'author' => 'Pets',
+        'title' => 'Same U.S title 1',
         'date' => 'January 1, 2021',
         'author' => 'Pets',
-        'content' => 'Same world content 1',
+        'content' => 'Same U.S content 1',
     ],
     
         [
-        'title' => 'Same world title 1', 'content' => 'same world content 1', 'date' => 'January 1, 2021', 'author' => 'Juss',
+        'title' => 'Same U.S title 1',
         'date' => 'January 1, 2021',
         'author' => 'Lusss',
-        'content' => 'Same world content 1',
+        'content' => 'Same U.S content 1',
     ],
       [
-        'title' => 'Same world title 1', 'content' => 'same world content 1', 'date' => 'January 1, 2021', 'author' => 'Alex',
+        'title' => 'Same U.S title 1',
         'date' => 'January 1, 2021',
         'author' => 'Alex',
-        'content' => 'Same world content 1',
+        'content' => 'Same U.S   content 1',
     ],
       [
-        'title' => 'Same world title 1', 'content' => 'same world content 1', 'date' => 'January 1, 2021', 'author' => 'Manivald',
+        'title' => 'Same U.S title 1',
         'date' => 'January 1, 2021',
         'author' => 'Manivald',
-        'content' => 'Same world content 1',
+        'content' => 'Same U.S content 1',
     ],
-
+];
     ?>
 
 
