@@ -40,8 +40,8 @@
           <a class="nav-item nav-link link-body-emphasis active" href="/"
             >World</a
           >
-          <a class="nav-item nav-link link-body-emphasis" href="/us.php">U.S.</a>
-          <a class="nav-item nav-link link-body-emphasis" href="/tech.php"
+          <a class="nav-item nav-link link-body-emphasis" href="/us">U.S.</a>
+          <a class="nav-item nav-link link-body-emphasis" href="/tech"
             >Technology</a
           >
           <a class="nav-item nav-link link-body-emphasis" href="#">Design</a>
