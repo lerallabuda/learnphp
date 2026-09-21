@@ -65,4 +65,8 @@ public function us()
         ];
         view('us', compact('title', 'posts'));
     }
+
+ public function forms() {
+        view('forms');
+    }
 }
