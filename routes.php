@@ -2,7 +2,8 @@
 
 use App\Controllers\PublicController;
 use App\Router;
-Router::addRoute('/', [PublicController::class, 'index']);
-Router::addRoute('/us', [PublicController::class, 'us']);
+Router::get('/', [PublicController::class, 'index']);
+Router::get('/us', [PublicController::class, 'us']);
 
-Router::addRoute('/forms', [PublicController::class, 'forms']);
+Router::get('/forms', [PublicController::class, 'forms']);
+Router::post('/forms', [PublicController::class, 'answer']););
