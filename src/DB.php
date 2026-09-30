@@ -1,5 +1,6 @@
 <?php
 namespace App;
+
 use PDO;
 use PDOException;
 
@@ -18,10 +19,10 @@ class DB {
             echo "Connection failed: " . $e->getMessage();
         }
     }
-    public function all() {
-        $sql = "SELECT * FROM articles";
+    public function all($table, $class) {
+        $sql = "SELECT * FROM $table";
         $result = $this->conn->query($sql);
-        $result->setFetchMode(PDO::FETCH_OBJ);
+        $result->setFetchMode(PDO::FETCH_CLASS, $class);
         return $result->fetchAll();
     }
 }
