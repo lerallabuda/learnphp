@@ -9,7 +9,7 @@ function dump(...$vars) {
 function dd(...$vars) {
     dump(...$vars);
     die;
-}s
+}
 
 function view($viewName, $variables=[]){
     extract($variables);

@@ -3,7 +3,7 @@
 namespace App\Models;
 
 class Article extends Model {
-    protected string $table = 'articles';
+    protected static string $table = 'articles';
     
     public $id;
     public $title;
