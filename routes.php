@@ -4,6 +4,7 @@ use App\Controllers\ArticlesController;
 use App\Controllers\AuthController;
 use App\Controllers\PublicController;
 use App\Router;
+
 Router::get('/', [PublicController::class, 'index']);
 Router::get('/us', [PublicController::class, 'us']);
 Router::get('/tech', [PublicController::class, 'tech']);

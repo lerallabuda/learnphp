@@ -12,7 +12,14 @@ class PublicController
         $articles = Article::all();
         $title = 'World';
         view('index', compact('title', 'articles'));
-    }
+    }   
+
+    public function tech()
+{
+    $articles = Article::all();
+    $title = 'Tech';
+    view('tech', compact('title', 'articles'));
+}
 
 public function us()
     {
