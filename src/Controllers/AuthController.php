@@ -3,12 +3,22 @@
 namespace App\Controllers;
 
 class AuthController {
-    public function loginForm() {
+     public function loginForm() {
+        view('auth/login');
+    }
         use App\Models\User;
 
     }
 
-    public function login() {
+       public function login() {
+        $user = User::where('email', $_POST['email']);
+        $user = $user ? $user[0] : null;
+        if(!$user || $user->password !== $_POST['password']) {
+            return redirect('/login');
+        }
+        $_SESSION['userID'] = $user->id;
+        redirect('/');
+    }
         class AuthController
 {
     public function loginForm() {}
@@ -43,9 +53,9 @@ class AuthController {
         redirect('/login');
     }
 
-    public function logout() {
-
     }
 }
-public function logout() {}
-}
+   public function logout() {
+        unset($_SESSION['userID']);
+        redirect('/');
+    }
